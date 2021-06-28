@@ -23,6 +23,10 @@ h1::selection{
 	color: white;
 	background: black;
 }
+a::selection{
+	color: white;
+	background: black;
+}
 .title{
 	grid-area: title;
 }
@@ -49,6 +53,10 @@ h1::selection{
 	font-size: 1.5em;
 	padding: .2em;
 	outline: none;
+}
+.link::selection{
+	color: white;
+	background: black;
 }
 button.btn{
 	grid-area: btn;
@@ -77,7 +85,10 @@ button.btn:hover::after{
 p.btn{
 	grid-area: link;
 }
-
+::selection{
+	color: black;
+	background: white;
+}
 @media only screen and (max-width: 399px) {
   body {
     font-size: 14px;
