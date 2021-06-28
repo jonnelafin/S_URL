@@ -1,0 +1,97 @@
+body{
+	background: black;
+	color: white;
+	font-family: arial;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font-size: 4em;
+	padding: 0.2em 0.333em;
+	margin: 0;
+	background: white;
+	color: black;
+	max-width: 3.3em;
+}
+h1::selection{
+	color: white;
+	background: black;
+}
+.title{
+	grid-area: title;
+}
+
+.container{
+	display: grid;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	grid-template: 
+		".  .     .    ." 1fr
+		".  title .    ." 6em
+		".  link  link ." 48px
+		".  .     btn  ." 48px
+		".  .     .    ." 1fr / 
+		1fr .5fr  .5fr 1fr;
+	gap: .5em;
+}
+.link{
+	grid-area: link;
+	border-radius: 0;
+	border: none;
+	font-size: 1.5em;
+	padding: .2em;
+	outline: none;
+}
+button.btn{
+	grid-area: btn;
+	cursor: pointer;
+	border-radius: 0;
+	border: 0px solid white;
+	outline: 0px solid green;
+	outline-offset: 0em;
+	font-size: 2em;
+	background: #5add00;
+	transition: outline .1s, outline-offset .1s, border .1s, color .1s, background .2s;
+}
+button.btn::after{
+	content: " >>>";
+	width: 0px;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: clip;
+	padding: 0;
+	margin: 0;
+	transition: width .5s;
+}
+button.btn:hover::after{
+	width: 1rem;
+}
+p.btn{
+	grid-area: link;
+}
+
+@media only screen and (max-width: 399px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 349px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 299px) {
+  body {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 249px) {
+  body {
+    font-size: 8px;
+  }
+}
+
