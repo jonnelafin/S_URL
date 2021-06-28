@@ -13,7 +13,6 @@ function redirect(){
 		console.log("redirecting to " + url + "..." );
 		btn.outerHTML = "";
 		input.outerHTML = "";
-		options.outerHTML = "";
 		window.location.href = url;
 	}
 	else{
@@ -52,7 +51,6 @@ function onBtnPress(){
 //	cont.style.gridTemplate = '".  .     .    ." 1fr ".  title .    ." 6em ".  link  link ." 48px ".  btn     btn  ." 48px ".  .     .    ." 1fr / 1fr .5fr .5fr 1fr';
 	btn.outerHTML = "<p class='btn' id='btn'>" + result + "</p>";
 	input.outerHTML = "";
-	options.outerHTML = "";
 }
 
 //purely out of laziness
