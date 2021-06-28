@@ -38,12 +38,13 @@ a::selection{
 	margin: 0;
 	padding: 0;
 	grid-template: 
-		".  .     .    ." 1fr
-		".  title .    ." 6em
-		".  link  link ." 48px
-		".  .     btn  ." 48px
-		".  .     .    ." 1fr / 
-		1fr .5fr  .5fr 1fr;
+		".  .     .     ." 1fr
+		".  title .     ." 6em
+		".  link  link  ." 48px
+		".  check check ." 0
+		".  .     btn   ." 48px
+		".  .     .     ." 1fr / 
+		1fr .5fr  .5fr  1fr;
 	gap: 1em;
 }
 .link{
@@ -57,6 +58,13 @@ a::selection{
 .link::selection{
 	color: white;
 	background: black;
+}
+.check{
+	grid-area: check;
+	text-align: end;
+}
+.check::before{
+	color: white;
 }
 button.btn{
 	grid-area: btn;
