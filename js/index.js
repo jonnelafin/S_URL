@@ -6,11 +6,15 @@ var title = document.getElementById("title");
 function redirect(){
 	if(window.location.href.includes("?")){
 		let target = window.location.href.split("?")[1];
+		homelink.href = window.location.href.split("?")[0];
 		let url = atob(target);
 		console.log("redirecting to " + url + "..." );
 		btn.outerHTML = "";
 		input.outerHTML = "";
 		window.location.href = url;
+	}
+	else{
+		homelink.href = window.location.href;
 	}
 }
 redirect();
