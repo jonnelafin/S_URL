@@ -36,7 +36,7 @@ h1::selection{
 		".  .     btn  ." 48px
 		".  .     .    ." 1fr / 
 		1fr .5fr  .5fr 1fr;
-	gap: .5em;
+	gap: 1em;
 }
 .link{
 	grid-area: link;
