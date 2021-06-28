@@ -2,7 +2,7 @@ var cont = document.getElementById("cont");
 var btn  = document.getElementById("btn");
 var input = document.getElementById("url");
 var title = document.getElementById("title");
-var options = document.getElementById("options");
+//var options = document.getElementById("options");
 var useWordsCheck = document.getElementById("useWords");
 
 function redirect(){
